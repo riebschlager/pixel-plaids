@@ -92,9 +92,16 @@ void keyPressed() {
     auto = false;
     countH = (int) random(img.width);
     countV = (int) random(img.height);
-    sliceSize = (int) random(1,50);
+    sliceSize = (int) random(1, 20);
     background = color(random(255), random(255), random(255));
     currentBlendMode = (int) random(blendModes.length-1);
+  }
+
+  // Use the current parameters and restart in auto mode
+  if (key=='a') {
+    auto = true;
+    countH = 0;
+    countV = 0;
   }
 }
 
