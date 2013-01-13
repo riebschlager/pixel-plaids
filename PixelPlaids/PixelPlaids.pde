@@ -43,6 +43,6 @@ void draw() {
 
 void keyPressed(){
   // See something you like? Hit a key to save it!
-  saveFrame();
+  saveFrame("images/###.png");
 }
 
