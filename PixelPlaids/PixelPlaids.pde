@@ -6,7 +6,7 @@ int dirV = 1;
 PImage sliceH = new PImage();
 PImage sliceV = new PImage();
 boolean auto = true;
-int sliceSize = 10;
+int sliceSize = 1;
 int currentBlendMode = 0;
 int background = 0;
 int[] blendModes = {
@@ -16,10 +16,10 @@ int[] blendModes = {
 void setup() {
 
   // Set to your native desktop size to create a nice desktop background
-  size(1440, 900); 
+  size(2560, 1440); 
 
   // Load an image and get started!
-  img = loadImage("img3.jpg");
+  img = loadImage("img5.jpg");
   img.loadPixels();
 }
 
@@ -54,7 +54,7 @@ void keyPressed() {
   if (key==' ') {
     saveFrame("images/###.png");
   }
-
+  
   // Make the sliceSize BIGGER
   if (key=='S') {
     sliceSize++;
@@ -92,7 +92,7 @@ void keyPressed() {
     auto = false;
     countH = (int) random(img.width);
     countV = (int) random(img.height);
-    sliceSize = (int) random(1, 20);
+    sliceSize = (int) random(1, 1);
     background = color(random(255), random(255), random(255));
     currentBlendMode = (int) random(blendModes.length-1);
   }
