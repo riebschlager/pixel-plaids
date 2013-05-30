@@ -14,7 +14,7 @@ void setup() {
   output.beginDraw();
   output.clear();
   output.endDraw();
-  src = loadImage("3964486479_14c02ba8c9_o.jpg");
+  src = loadImage("img1.jpg");
   src.loadPixels();
 }
 
